@@ -1,0 +1,15 @@
+spring:
+  jpa.hibernate.ddl-auto: create
+  datasource:
+    url: jdbc:mysql://144.24.2.220:3306/reaktor
+    username: root
+    password: toor
+    hikari:
+      connection-timeout: 60000
+      maximum-pool-size: 5
+server:
+  port: 8084
+
+reaktor:
+  cronComputerOn: 5_000
+  cronComputerOnDifference: 7_000
